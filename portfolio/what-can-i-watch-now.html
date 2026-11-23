@@ -9,9 +9,9 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..700&family=Hanken+Grotesk:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="site.css?v=20261123e">
-<link rel="stylesheet" href="redesign.css?v=20261123e">
-<link rel="stylesheet" href="refinement.css?v=20261123e">
+<link rel="stylesheet" href="site.css?v=20261123f">
+<link rel="stylesheet" href="redesign.css?v=20261123f">
+<link rel="stylesheet" href="refinement.css?v=20261123f">
 </head>
 <body class="case-page-v2">
 <a class="skip-link" href="#main">Skip to content</a>
@@ -35,7 +35,7 @@
   <div class="toc-scrim" data-toc-close></div>
   <aside class="toc-sheet" role="dialog" aria-modal="true" aria-labelledby="tocTitle">
     <header><b id="tocTitle">Contents</b><button class="toc-close" type="button" data-toc-close aria-label="Close contents"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button></header>
-    <nav aria-label="Case study sections"><p class="toc-group">Overview</p><ol><li><a href="#glance" data-toc>Overview</a></li><li><a href="#strategy-system" data-toc>Strategy, system and measurement</a></li><li><a href="#today" data-toc>The product today</a></li><li><a href="#personas" data-toc>The four personas</a></li><li><a href="#screens" data-toc>What changed at release</a></li></ol><p class="toc-group">Evidence and decisions</p><ol><li><a href="#validation" data-toc>Three sources of evidence</a></li><li><a href="#beforeafter" data-toc>Before and after</a></li><li><a href="#rice" data-toc>How I prioritised</a></li><li><a href="#process" data-toc>How the release ran</a></li><li><a href="#catalogue" data-toc>Why Korean titles were hard to find</a></li></ol><p class="toc-group">Design</p><ol><li><a href="#wireframes" data-toc>Wireframes</a></li><li><a href="#storyboard" data-toc>Storyboard</a></li></ol><p class="toc-group">Detail</p><ol><li><a href="#product" data-toc>How it works</a></li><li><a href="#constraints" data-toc>Constraints</a></li><li><a href="#discarded" data-toc>A metric I discarded</a></li><li><a href="#shipped" data-toc>Requirements</a></li><li><a href="#scenarios" data-toc>Scenarios</a></li></ol><p class="toc-group">Launch and results</p><ol><li><a href="#gtm" data-toc>Go-to-market</a></li><li><a href="#notdone" data-toc>What I chose not to do</a></li><li><a href="#results" data-toc>Verified changes and next measures</a></li><li><a href="#caveats" data-toc>Caveats</a></li></ol></nav>
+    <nav aria-label="Case study sections"><p class="toc-group">Overview</p><ol><li><a href="#glance" data-toc>Overview</a></li><li><a href="#strategy-system" data-toc>Strategy, system and measurement</a></li><li><a href="#since-release" data-toc>Since the release</a></li><li><a href="#today" data-toc>The product today</a></li><li><a href="#personas" data-toc>The four personas</a></li><li><a href="#screens" data-toc>What changed at release</a></li></ol><p class="toc-group">Evidence and decisions</p><ol><li><a href="#validation" data-toc>Three sources of evidence</a></li><li><a href="#beforeafter" data-toc>Before and after</a></li><li><a href="#rice" data-toc>How I prioritised</a></li><li><a href="#process" data-toc>How the release ran</a></li><li><a href="#catalogue" data-toc>Why Korean titles were hard to find</a></li></ol><p class="toc-group">Design</p><ol><li><a href="#wireframes" data-toc>Wireframes</a></li><li><a href="#storyboard" data-toc>Storyboard</a></li></ol><p class="toc-group">Detail</p><ol><li><a href="#product" data-toc>How it works</a></li><li><a href="#constraints" data-toc>Constraints</a></li><li><a href="#discarded" data-toc>A metric I discarded</a></li><li><a href="#shipped" data-toc>Requirements</a></li><li><a href="#scenarios" data-toc>Scenarios</a></li></ol><p class="toc-group">Launch and results</p><ol><li><a href="#gtm" data-toc>Go-to-market</a></li><li><a href="#notdone" data-toc>What I chose not to do</a></li><li><a href="#results" data-toc>Verified changes and next measures</a></li><li><a href="#caveats" data-toc>Caveats</a></li></ol></nav>
   </aside>
 </div>
 <main id="main">
@@ -52,7 +52,7 @@
       <div class="case-poster-v2"><img src="img/wciwn-now-landing.jpg" alt="The What Can I Watch Now landing page on a phone"><img src="img/wciwn-now-profile.jpg" alt="The results page opening with the viewer profile"><img src="img/wciwn-now-recommendations.jpg" alt="A recommendation card explaining why the title fits"></div>
     </div>
     <div class="case-summary-strip-v2">
-      <div><b>23/34</b><span>first visitors left without starting</span></div>
+      <div><b>12% → 25%</b><span>completion from first visit, before and after the release (early read)</span></div>
       <div><b>3</b><span>evidence sources used to diagnose the problem</span></div>
       <div><b>7/9</b><span>prioritised changes shipped</span></div>
       <div><b>1 → 6</b><span>non-US/UK titles in the first 24 results, before and after</span></div>
@@ -62,7 +62,7 @@
 
 <section class="case-dashboard-v2" id="glance">
   <div class="wrap">
-    <div class="case-dashboard-head-v2"><h2>Overview</h2><div><p>User sessions found problems inside the journey, but the funnel showed a bigger one: most first visitors never started. This release made the first step clearer, international titles easier to find, and coming back possible without starting again.</p><p><strong>Measurement status:</strong> changes checked in the live build. Any change in behaviour will show in the next funnel read.</p></div></div>
+    <div class="case-dashboard-head-v2"><h2>Overview</h2><div><p>User sessions found fixes inside the journey, and tracking found the biggest opportunity at the very start: helping more first visitors begin. This release made the first step clearer, international titles easier to find, and coming back possible without starting again.</p><p><strong>Measurement status:</strong> every change is checked in the live build, and the early read is encouraging: completion from first visit has roughly doubled. The full read comes at about 150 first visits.</p></div></div>
 
     <div class="mode-panel-v2" aria-label="Case study reading mode">
       <p id="modeDescription">Highlights: the key decisions. Full case: everything.</p>
@@ -80,10 +80,10 @@
     </nav>
 
     <div class="brief-grid-v2">
-      <article class="brief-card-v2"><p class="label-v2">Problem</p><h3>Most visitors never started.</h3><p>23 of 34 first visitors left from the landing page. User sessions couldn't show this: participants had already agreed to try it.</p></article>
+      <article class="brief-card-v2"><p class="label-v2">Finding</p><h3>The biggest opportunity was the landing page.</h3><p>Tracking showed 23 of 34 first visitors hadn't started the journey, something user sessions couldn't reveal because participants had already agreed to try it.</p></article>
       <article class="brief-card-v2"><p class="label-v2">Root cause</p><h3>The users' explanation wasn't the cause.</h3><p>Users said they missed that the step was optional. In fact, the skip control had never appeared.</p></article>
       <article class="brief-card-v2"><p class="label-v2">Decision</p><h3>Seven changes shipped together.</h3><p>Nine changes scored, two held back, including a requested feature that wouldn't have changed any recommendation.</p></article>
-      <article class="brief-card-v2"><p class="label-v2">Measurement</p><h3>The outcome isn't known yet.</h3><p>The build is checked. Results wait for about 150 first visits.</p></article>
+      <article class="brief-card-v2"><p class="label-v2">Measurement</p><h3>Early signs are good.</h3><p>Completion from first visit rose from 12% to 25% in the early read. The full read comes at about 150 first visits.</p></article>
     </div>
   </div>
 </section>
@@ -95,7 +95,7 @@
       <article class="diagram-v2 wide">
         <h3>Opportunity-to-solution map</h3><p>Each row: the problem, the opportunity, what shipped and the signal to watch.</p>
         <div class="tree-v2">
-          <div class="tree-node-v2"><strong>Problem</strong><span>23 of 34 first visitors never started</span></div><div class="tree-node-v2"><strong>Opportunity</strong><span>Make the first step and the length of the journey obvious</span></div><div class="tree-node-v2 solution"><strong>Shipped response</strong><span>Clarified the optional step and added progress cues</span></div><div class="tree-node-v2 signal"><strong>Signal</strong><span>Start rate and completion in the next funnel read</span></div>
+          <div class="tree-node-v2"><strong>Problem</strong><span>Tracking showed most first visitors hadn't started</span></div><div class="tree-node-v2"><strong>Opportunity</strong><span>Make the first step and the length of the journey obvious</span></div><div class="tree-node-v2 solution"><strong>Shipped response</strong><span>Clarified the optional step and added progress cues</span></div><div class="tree-node-v2 signal"><strong>Signal</strong><span>Start rate and completion in the next funnel read</span></div>
           <div class="tree-node-v2"><strong>Problem</strong><span>Korean titles existed but ranking and filters buried them</span></div><div class="tree-node-v2"><strong>Opportunity</strong><span>Let regional intent shape discovery earlier</span></div><div class="tree-node-v2 solution"><strong>Shipped response</strong><span>Made in filter plus regional ranking changes</span></div><div class="tree-node-v2 signal"><strong>Signal</strong><span>1 to 6 non-US/UK titles in the first 24, verified</span></div>
           <div class="tree-node-v2"><strong>Problem</strong><span>Returning meant repeating the entire journey</span></div><div class="tree-node-v2"><strong>Opportunity</strong><span>Support return without an account or stored profile</span></div><div class="tree-node-v2 solution"><strong>Shipped response</strong><span>Portable code holding the preferences themselves</span></div><div class="tree-node-v2 signal"><strong>Signal</strong><span>Code copied, used and answers edited after restore</span></div>
         </div>
@@ -135,7 +135,7 @@
     <div class="glance-grid">
       <a class="gcard" href="#validation">
         <div class="gn">23 of 34</div>
-        <div class="gl">first-time visitors left without starting. The interviews couldn't have shown me this, because both people had already agreed to try it. The funnel did.</div>
+        <div class="gl">first-time visitors hadn't started the journey. The interviews couldn't have shown me this, because both people had already agreed to try it. Tracking did.</div>
         <div class="gs">Problem validation</div>
       </a>
       <a class="gcard" href="#catalogue">
@@ -184,6 +184,55 @@
       <li><a href="#notdone">Instrumentation plan</a><span>events added</span></li>
     </ul>
 
+  </div>
+</section>
+
+<section class="dash-sec" id="since-release" aria-labelledby="since-title">
+  <div class="wrap">
+    <div class="section-heading-v2"><div><p class="eyebrow-v2">Analytics</p><h2 id="since-title">Since the release</h2></div><p>Every step of the journey is tracked without cookies, so any drop-off shows up quickly and points to what to improve next. This is the early read.</p></div>
+
+    <div class="dash-kpis">
+      <div class="dash-kpi"><b>74</b><span>first visits since launch</span></div>
+      <div class="dash-kpi"><b>15</b><span>recommendation lists delivered</span></div>
+      <div class="dash-kpi accent"><b>12% → 25%</b><span>completion from first visit, before and after the release</span></div>
+      <div class="dash-kpi"><b>17</b><span>returns within a week of a first visit</span></div>
+      <div class="dash-kpi"><b>0 → 5</b><span>people opening Send my list, before and after</span></div>
+    </div>
+
+    <div class="dash-grid">
+      <article class="dash-card wide">
+        <h3>The journey after the release</h3>
+        <p>Once people start, most finish: 10 of the 11 who reached the mood step got their recommendations.</p>
+        <div class="dbars" role="img" aria-label="After the release: 15 started the journey, 11 chose titles, 11 set the mood and 10 got recommendations."><div class="dbar"><span class="dl">Started the journey</span><span class="dt"><span class="df" style="width:100%"></span></span><span class="dv">15</span></div><div class="dbar"><span class="dl">Chose titles</span><span class="dt"><span class="df" style="width:73%"></span></span><span class="dv">11</span></div><div class="dbar"><span class="dl">Set the mood</span><span class="dt"><span class="df" style="width:73%"></span></span><span class="dv">11</span></div><div class="dbar"><span class="dl">Got recommendations</span><span class="dt"><span class="df" style="width:67%"></span></span><span class="dv">10</span></div></div>
+      </article>
+      <article class="dash-card">
+        <h3>Devices</h3>
+        <p>Phones and tablets make up 57% of visits, which is why every screen is designed phone-first.</p>
+        <div class="dstack" role="img" aria-label="Phones 44%, tablets and large phones 13%, computers 44%.">
+          <span class="s1" style="width:44%"></span><span class="s2" style="width:13%"></span><span class="s3" style="width:43%"></span>
+        </div>
+        <ul class="dkey"><li><i class="s1"></i>Phones 44%</li><li><i class="s2"></i>Tablets and large phones 13%</li><li><i class="s3"></i>Computers 44%</li></ul>
+      </article>
+      <article class="dash-card">
+        <h3>Where visitors are</h3>
+        <p>An audience in more than six countries, led by the UK and the US.</p>
+        <div class="dstack" role="img" aria-label="United Kingdom 72%, United States 21%, other countries 7%.">
+          <span class="s1" style="width:72%"></span><span class="s2" style="width:21%"></span><span class="s3" style="width:7%"></span>
+        </div>
+        <ul class="dkey"><li><i class="s1"></i>United Kingdom 72%</li><li><i class="s2"></i>United States 21%</li><li><i class="s3"></i>Canada, Taiwan, Austria, China and others 7%</li></ul>
+      </article>
+      <article class="dash-card">
+        <h3>Tracked sources</h3>
+        <p>LinkedIn brings the most tagged visits, and Instagram became a second channel after the release.</p>
+        <div class="dbars small" role="img" aria-label="Visits with a known source since launch: LinkedIn 41, Instagram 15, Google 2, Facebook 2."><div class="dbar"><span class="dl">LinkedIn</span><span class="dt"><span class="df" style="width:100%"></span></span><span class="dv">41</span></div><div class="dbar"><span class="dl">Instagram</span><span class="dt"><span class="df" style="width:37%"></span></span><span class="dv">15</span></div><div class="dbar"><span class="dl">Google</span><span class="dt"><span class="df" style="width:5%"></span></span><span class="dv">2</span></div><div class="dbar"><span class="dl">Facebook</span><span class="dt"><span class="df" style="width:5%"></span></span><span class="dv">2</span></div></div>
+      </article>
+      <article class="dash-card">
+        <h3>What's tracked</h3>
+        <p>Cookie-free events that catch problems early and show what people value.</p>
+        <ul class="dtags"><li>Each journey step</li><li>First and return visits</li><li>Skips</li><li>Titles picked</li><li>Lists sent</li><li>Already seen</li><li>Start again</li><li>Channel tags</li></ul>
+      </article>
+    </div>
+    <p class="smallnote dash-note">Source: the product's cookieless analytics (GoatCounter), from launch to the latest read. Counts are unique visits per step and may include a few test visits. Cloudflare also recorded about 1,770 unique addresses in the last 30 days, including the search engines and crawlers indexing the site.</p>
   </div>
 </section>
 
@@ -349,7 +398,7 @@
         <div class="shot-img"><img src="img/wciwn-landing.jpg" alt="The live landing page on a phone: the product name, one line on what it does, a Get started now button, and a box to paste a code from last time." loading="lazy" width="390" height="844"></div>
         <figcaption>
           <h3>The landing page</h3>
-          <p class="sp"><b>The problem.</b> 23 of 34 first visitors landed and never started. Neither interviewee could have raised it, because both had already agreed to try the tool.</p>
+          <p class="sp"><b>The problem.</b> Tracking showed 23 of 34 first visitors hadn't started. Neither interviewee could have raised it, because both had already agreed to try the tool.</p>
           <p class="sc"><b>What changed.</b> One line on what the tool does and a single button above the fold, with the explanation collapsed. Returning visitors can paste their code straight in.</p>
           <p class="sr"><a href="#req3">Requirement sets 3 and 4</a></p>
         </figcaption>
@@ -469,7 +518,7 @@
           <g stroke="var(--dk-yellow)" fill="none" stroke-width="1.5">
             <path d="M672 56 v12 h-304 v-6"/>
           </g>
-          <text x="672" y="79" text-anchor="end" font-size="10.5" fill="var(--dk-yellow)">23 of 34 landed and never started</text>
+          <text x="672" y="79" text-anchor="end" font-size="10.5" fill="var(--dk-yellow)">23 of 34 hadn't started yet: the biggest opportunity</text>
         </svg>
       </div>
       <figcaption>The journey funnel, first visits, the product's full life to the pre-release read. Completion from first visit: 4 of 34, 12%. Each step's percentage is held from the previous step.</figcaption>
@@ -487,7 +536,7 @@
       </div>
       <div style="background:var(--dk-card);border:1px solid var(--dk-line);border-radius:10px;padding:1.2rem 1.3rem">
         <h5 style="font-family:'Public Sans',system-ui,sans-serif;font-size:.64rem;letter-spacing:.01em;color:var(--dk-yellow);margin:0 0 .8em;font-weight:600">Where the funnel disagreed with the interviews</h5>
-        <p style="font-size:.9rem;margin:0">The reasons screen lost one person in six, which is User B and no more. The larger leak was earlier: 23 of 34 people landed and never started at all. Neither interviewee mentioned it, and neither could have, because both were sitting with me and had already agreed to try the tool. Qualitative research is structurally blind to the people who leave before they become users.</p>
+        <p style="font-size:.9rem;margin:0">The reasons screen saw one person in six stop, which is User B and no more. The bigger opportunity came earlier: 23 of 34 people landed but hadn't started. Neither interviewee mentioned it, and neither could have, because both were sitting with me and had already agreed to try the tool. Qualitative research is structurally blind to the people who leave before they become users.</p>
       </div>
     </div>
 
@@ -1184,7 +1233,7 @@
       <div class="rbody">
         <div class="rcol">
           <h5>User problem</h5>
-          <p style="font-size:.9rem">23 of 34 people landed and never started at all, and User B taps Continue expecting a list because nothing told him what came next.</p>
+          <p style="font-size:.9rem">23 of 34 people landed but hadn't started, and User B taps Continue expecting a list because nothing told him what came next.</p>
           <h5>Pain points</h5>
           <ul>
             <li>Progress signalling was a 4px bar and small grey text, hidden on phones.</li>
@@ -1361,7 +1410,7 @@
 <section class="sec" id="results">
   <div class="wrap">
     <h2>Verified changes and next measures</h2>
-    <p class="measure">No outcome data yet. The release is verified, and the next funnel read has clear baselines.</p>
+    <p class="measure">The release is verified, and an early read is in (see <a href="#since-release">Since the release</a>). The full read comes at about 150 first visits.</p>
     <div class="grid2">
       <div class="resbox">
         <h4>Verified in the shipped build</h4>
@@ -1387,7 +1436,7 @@
 
     <h3 style="margin-top:2.4rem">Lessons for the next release</h3>
     <ol class="learn">
-      <li><b>Interviews only reach people who've already agreed to take part.</b> The biggest drop-off (23 of 34 people never starting) only showed up in the funnel.</li>
+      <li><b>Interviews only reach people who've already agreed to take part.</b> The biggest opportunity (23 of 34 people not yet starting) only showed up in the funnel.</li>
       <li><b>Check the product before acting on the diagnosis.</b> Users said they had not noticed the skip. Taking that at face value would have meant making the skip button more prominent, and there was no skip button.</li>
       <li><b>The ranking mattered more than the catalogue.</b> Korean titles existed, but they ranked too low for people to find them.</li>
       <li><b>If I can't explain an option, a user won't understand it.</b> That test cut two categories.</li>
@@ -1414,6 +1463,7 @@
         <p>Figures marked as shipped and verified are verified behaviours of the build, not results.</p>
       </div>
     </div>
+    <p class="smallnote" style="margin-top:1.2rem">These caveats were written at release. Since then, an early read has come in: see <a href="#since-release">Since the release</a>. It is still below the 150 first visits set above, so read it as a direction of travel.</p>
   </div>
 </section>
 
@@ -1545,6 +1595,6 @@
   }
 })();
 </script>
-<script src="site.js?v=20261123e"></script>
+<script src="site.js?v=20261123f"></script>
 </body>
 </html>
