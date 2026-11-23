@@ -346,3 +346,11 @@ a.tile:focus-visible{outline:3px solid var(--slate);outline-offset:4px}
 .dash-note{margin-top:1rem}
 @media (max-width:900px){.dash-kpis{grid-template-columns:repeat(2,minmax(0,1fr))}.dash-kpi{border-bottom:1px solid var(--line)}.dash-kpi:nth-child(2n){border-right:0}.dash-kpi:last-child{grid-column:1 / -1}.dash-grid{grid-template-columns:1fr}}
 @media (max-width:520px){.dbar{grid-template-columns:7.5rem minmax(0,1fr) 2rem;gap:.5rem;font-size:.8rem}}
+
+/* No accent bars on callouts, cards or quotes */
+.callout{border-left:0;border:1px solid var(--line);border-radius:0}
+.caveats .card{border-left:1px solid var(--line-soft);border-radius:0}
+.brief-card-v2,.brief-card-v2:nth-child(n){border-top:0;border:1px solid var(--line)}
+.principle-list li{border-left:0;padding-left:0}
+.rounds{border-left-color:var(--line)}
+blockquote{border-left:0}
