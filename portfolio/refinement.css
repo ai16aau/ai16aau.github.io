@@ -247,3 +247,22 @@ a.tile:focus-visible{outline:3px solid var(--slate);outline-offset:4px}
   .theme-toggle{width:40px;height:40px}
   .home-fit .tile-visual svg{padding:4%}
 }
+
+/* Compact page headers */
+.home-fit .landing{padding:clamp(.7rem,2vh,1.3rem) 0 clamp(.6rem,1.6vh,1rem)}
+.home-fit .landing h1{font-size:clamp(1.7rem,min(4.6vh,3.4vw),2.9rem);letter-spacing:-.03em}
+.home-fit .landing .lede{font-size:clamp(.92rem,min(1.9vh,1.25vw),1.05rem);max-width:30rem}
+.projects-page-head-v3{padding:clamp(1.1rem,2.6vw,1.8rem) 0 clamp(1rem,2vw,1.4rem)}
+.projects-page-head-v3 .wrap{display:flex;align-items:flex-end;justify-content:space-between;gap:.6rem 2.5rem;flex-wrap:wrap}
+.projects-page-head-v3 .plain-eyebrow-v3{display:none}
+.projects-page-head-v3 h1{font-size:clamp(1.8rem,3.4vw,2.9rem);letter-spacing:-.035em;margin:0}
+.projects-page-head-v3 p{font-size:clamp(.92rem,1.2vw,1.05rem);max-width:34rem;margin:0}
+.project-list-v3{padding-top:clamp(1rem,2vw,1.6rem)}
+@media (max-width:900px){.home-fit .landing h1{font-size:clamp(1.6rem,7vw,2.2rem);margin-bottom:.2em}.home-fit .landing .lede{font-size:.9rem}}
+/* Smaller titles on the Projects card and the case study header */
+.project-card-v3 h2{font-size:clamp(1.9rem,3.2vw,3rem)}
+.case-hero-v2{padding-top:clamp(1.6rem,3vw,2.6rem)}
+.case-hero-v2 h1{font-size:clamp(2.4rem,4.6vw,4.2rem);margin-bottom:.3em}
+.case-poster-v2{min-height:0;padding:1.1rem}
+.case-poster-v2 img{max-height:340px}
+@media (max-width:640px){.case-hero-v2 h1{font-size:clamp(2.1rem,10vw,2.8rem)}}
