@@ -266,3 +266,49 @@ a.tile:focus-visible{outline:3px solid var(--slate);outline-offset:4px}
 .case-poster-v2{min-height:0;padding:1.1rem}
 .case-poster-v2 img{max-height:340px}
 @media (max-width:640px){.case-hero-v2 h1{font-size:clamp(2.1rem,10vw,2.8rem)}}
+
+/* =====================================================================
+   Compact headings and opening sections across the site
+   ===================================================================== */
+/* Case study opening block */
+.case-hero-v2{padding-top:clamp(1rem,2vw,1.6rem)}
+.case-hero-grid-v2{grid-template-columns:minmax(0,1.3fr) minmax(0,.7fr);gap:clamp(1.2rem,3vw,2.6rem);align-items:center}
+.case-hero-v2 .eyebrow-v2{margin-bottom:.45rem;font-size:.7rem}
+.case-hero-v2 h1{font-size:clamp(1.8rem,3vw,2.6rem);line-height:1;letter-spacing:-.03em;max-width:none;margin:0 0 .45em}
+.case-hero-v2 .lead-v2{font-size:clamp(.95rem,1.2vw,1.05rem);line-height:1.5;max-width:40rem;margin:0}
+.case-hero-v2 .home-actions-v2{margin-top:1rem;gap:.6rem}
+.case-hero-v2 .button-v2{min-height:40px;padding:.5rem .95rem;font-size:.9rem}
+.case-poster-v2{padding:.7rem;gap:.5rem}
+.case-poster-v2 img{max-height:200px;border-width:4px;border-radius:14px}
+.case-poster-v2::after{font-size:.6rem;padding:.35rem .6rem}
+.case-summary-strip-v2{margin-top:clamp(1rem,2vw,1.5rem)}
+.case-summary-strip-v2>div{padding:.6rem .9rem}
+.case-summary-strip-v2 b{font-size:1.35rem}
+.case-summary-strip-v2 span{margin-top:.25rem}
+
+/* Section headings in the case study */
+.case-dashboard-v2{padding:clamp(1.8rem,3.5vw,3rem) 0}
+.artifact-lab-v2{padding:clamp(1.8rem,3.5vw,3rem) 0}
+.case-dashboard-head-v2 h2,.section-heading-v2 h2,.case-page-v2 .sec>.wrap>h2,.sec>.wrap>h2{font-size:clamp(1.55rem,2.5vw,2.2rem);line-height:1.08;letter-spacing:-.025em;max-width:none}
+.section-heading-v2{margin-bottom:1.2rem}
+.case-dashboard-head-v2{margin-bottom:1.2rem}
+
+/* Projects page */
+.projects-page-head-v3{padding:.9rem 0 .8rem}
+.projects-page-head-v3 h1{font-size:clamp(1.6rem,2.6vw,2.2rem)}
+.project-list-v3{padding-top:1rem}
+.project-card-v3 .copy{padding:clamp(1.1rem,2vw,1.8rem)}
+.project-card-v3 h2{font-size:clamp(1.5rem,2.3vw,2.1rem);line-height:1.05;letter-spacing:-.025em;margin:.1em 0 .4em}
+.project-card-v3 .plain-eyebrow-v3{font-size:.7rem;margin-bottom:.3rem}
+.wip-head h2{font-size:clamp(1.5rem,2.4vw,2.1rem)}
+.section-head h2{font-size:clamp(1.4rem,2.2vw,1.9rem)}
+
+/* Landing page */
+.home-fit .landing h1{font-size:clamp(1.6rem,min(4vh,3vw),2.5rem)}
+@media (max-width:640px){
+  .case-hero-v2 h1{font-size:clamp(1.7rem,8vw,2.2rem)}
+  .case-poster-v2{display:none}
+  .case-summary-strip-v2{grid-template-columns:1fr 1fr}
+}
+@media (max-width:900px){.case-hero-grid-v2{grid-template-columns:1fr}.case-poster-v2{display:none}}
+@media (max-width:640px){.case-hero-v2 .lead-v2{font-size:.93rem}.case-summary-strip-v2>div{padding:.5rem .7rem}.case-summary-strip-v2 b{font-size:1.15rem}}
