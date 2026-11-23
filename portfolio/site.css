@@ -642,3 +642,34 @@ a.g-item:focus-visible .g-phone{outline:2px solid var(--band-accent);outline-off
 @media(max-width:900px){.home-hero .hero-grid-case{grid-template-columns:1fr}}
 .main-links a{white-space:nowrap}
 @media(max-width:400px){.main-links a{padding:.45rem .55rem}.brand-name{font-size:1rem}}
+
+/* =====================================================================
+   LANDING (home)
+   ===================================================================== */
+.landing{padding:clamp(3.4rem,9vw,7rem) 0 clamp(2rem,4.5vw,3.2rem)}
+.landing h1{font-size:clamp(3rem,9vw,7rem);line-height:.95;letter-spacing:-.03em;margin:0 0 .35em}
+.landing .lede{font-size:clamp(1.1rem,1.8vw,1.35rem);color:var(--ink-2);max-width:34rem;margin:0}
+.tiles{padding:0 0 clamp(3.4rem,8vw,6rem)}
+.tile-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(1.2rem,2.6vw,2rem)}
+@media(max-width:860px){.tile-grid{grid-template-columns:1fr}}
+.tile{display:flex;flex-direction:column;border-radius:var(--r-l);overflow:hidden;background:var(--surface);border:1px solid var(--line-soft);color:var(--ink);text-decoration:none;transition:transform .25s ease,box-shadow .25s ease}
+a.tile:hover{transform:translateY(-4px);box-shadow:var(--shadow-2)}
+.tile-visual{position:relative;aspect-ratio:4/3;overflow:hidden}
+.tile-visual.dark{background:var(--band)}
+.tile-visual.slate{background:var(--slate-soft)}
+.tile-visual svg{position:absolute;inset:0;width:100%;height:100%}
+.fan{position:absolute;inset:0;display:flex;justify-content:center;align-items:flex-start;gap:4%;padding:7% 4% 0}
+.fan span{display:block;width:28%;flex:none;background:#000;border-radius:20px;padding:5px;border:1px solid rgba(255,255,255,.12);box-shadow:0 24px 44px -20px rgba(0,0,0,.8);transition:transform .35s ease}
+.fan span:nth-child(2){margin-top:7%}
+.fan img{display:block;width:100%;height:auto;aspect-ratio:390/844;object-fit:cover;object-position:top;border-radius:15px}
+a.tile:hover .fan span:nth-child(odd){transform:translateY(-6px)}
+a.tile:hover .fan span:nth-child(even){transform:translateY(-2px)}
+.tile-cap{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:1.15rem 1.4rem 1.3rem}
+.tile-cap h2{font-size:clamp(1.25rem,2.1vw,1.55rem);margin:0 0 .15rem;letter-spacing:-.015em}
+.tile-cap p{margin:0;font-family:var(--f-ui);font-size:.95rem;color:var(--ink-2);display:flex;align-items:center;gap:.55rem;flex-wrap:wrap}
+.tile-cap .live{font-size:.75rem;font-weight:650;color:var(--accent);background:var(--accent-soft);border-radius:999px;padding:.2em .7em}
+.tile-go{flex:none;width:44px;height:44px;border-radius:999px;display:grid;place-items:center;background:var(--accent);color:var(--accent-ink);transition:transform .2s ease}
+.tile-go svg{width:20px;height:20px}
+a.tile:hover .tile-go{transform:translateX(3px)}
+.tile.is-soon .tile-visual{opacity:.85}
+@media (prefers-reduced-motion: reduce){.tile,.fan span,.tile-go{transition:none}a.tile:hover,a.tile:hover .fan span,a.tile:hover .tile-go{transform:none}}
