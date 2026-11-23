@@ -107,3 +107,81 @@
 }
 
 @media(prefers-reduced-motion:reduce){.device-v3{transition:none}.g-item:hover .device-v3{transform:none}}
+
+/* =====================================================================
+   Fourth pass: usability and visual fixes
+   ===================================================================== */
+.visually-hidden{position:absolute!important;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+
+/* System architecture: a vertical flow reads properly in a half-width card */
+.arch-v2{grid-template-columns:1fr;gap:.6rem}
+.arch-node-v2{display:grid;grid-template-columns:5.2rem minmax(0,1fr);align-items:baseline;gap:.8rem;min-height:0;padding:.75rem .95rem}
+.arch-node-v2 b{margin:0}
+.arch-node-v2 span{font-size:.92rem}
+.arch-node-v2:not(:last-child)::after{right:auto;left:2.9rem;top:100%;width:0;height:.6rem;border-top:0;border-left:2px solid var(--v3-accent)}
+
+/* KPI tree: readable text on the filled primary box */
+.kpi-v2>div:first-child b,.kpi-v2>div:first-child small{color:#fff}
+.kpi-v2>div:first-child small{opacity:.85}
+
+/* Product today gallery inside the case study */
+#today .gallery-head p{max-width:38rem}
+.today-note{margin:.4rem 0 0;font-family:var(--f-ui);font-size:.82rem;color:var(--band-ink-2)}
+#today .g-item{text-decoration:none}
+#today .g-item figcaption{color:var(--band-ink-2)}
+
+/* Touch targets */
+.main-links a{min-height:44px;display:inline-flex;align-items:center}
+.theme-toggle{width:44px;height:44px}
+
+/* Landing: featured project plus a grid of work in progress */
+.tile-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+.tile-feature{grid-column:1/-1}
+.tile-feature .tile-visual{aspect-ratio:auto;height:clamp(300px,38vw,440px)}
+.tile-feature .fan{padding-top:4%;gap:3%}
+.tile-feature .fan span{width:17%}
+.tile-feature .fan span:nth-child(2),.tile-feature .fan span:nth-child(4){margin-top:4%}
+.tile-feature .tile-cap h2{font-size:clamp(1.5rem,2.8vw,2.2rem)}
+.tile-feature .tile-cap p:not(.tile-status){font-size:1rem;max-width:36rem}
+.tile-visual.accent{background:var(--accent-soft)}
+.tile-visual svg{padding:6% 8%}
+.tile-status{margin:0 0 .35rem!important;font-family:var(--f-ui);font-size:.74rem!important;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--ink-2)!important;display:flex;align-items:center;gap:.45rem}
+.tile-status .dot,.wip-status .dot{width:8px;height:8px;border-radius:50%;border:2px solid var(--slate);flex:none}
+.tile-status.live{color:var(--accent)!important}
+.tile-status.live .dot{background:var(--accent);border-color:var(--accent)}
+.tile-go.ghost{background:transparent;color:var(--ink);border:1.5px solid var(--line)}
+a.tile:hover .tile-go.ghost{border-color:var(--ink)}
+a.tile:focus-visible{outline:3px solid var(--slate);outline-offset:4px}
+@media(max-width:860px){.tile-feature .fan span{width:26%}.tile-feature .fan span:nth-child(4){display:none}.tile-feature .tile-visual{height:auto;aspect-ratio:4/3}}
+
+/* Projects page: work in progress */
+.wip-section{padding:0 0 clamp(3.5rem,7vw,5.5rem)}
+.wip-head{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:1rem 3rem;align-items:end;margin-bottom:1.6rem}
+.wip-head h2{margin:0;font-size:clamp(2rem,4vw,3.2rem);letter-spacing:-.035em}
+.wip-head p{margin:0;color:var(--ink-2);max-width:36rem}
+@media(max-width:760px){.wip-head{grid-template-columns:1fr}}
+.wip-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1.25rem}
+@media(max-width:860px){.wip-grid{grid-template-columns:1fr}}
+.wip-card{display:flex;flex-direction:column;border:1px solid var(--line);background:var(--surface);scroll-margin-top:90px}
+.wip-card:target{outline:3px solid var(--accent);outline-offset:3px}
+.wip-visual{aspect-ratio:16/9;background:var(--slate-soft);display:grid;place-items:center;overflow:hidden}
+.wip-visual.accent{background:var(--accent-soft)}
+.wip-visual svg{width:100%;height:100%;padding:5% 10%}
+.wip-body{padding:1.3rem 1.4rem 1.5rem}
+.wip-body h3{font-size:clamp(1.35rem,2.2vw,1.7rem);margin:0 0 .5rem;letter-spacing:-.02em}
+.wip-body>p:not(.wip-status){color:var(--ink-2);margin:0 0 1rem}
+.wip-status{margin:0 0 .6rem;font-family:var(--f-ui);font-size:.74rem;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--ink-2);display:flex;align-items:center;gap:.45rem}
+.wip-facts{margin:0;display:grid;gap:0;border-top:1px solid var(--line-soft)}
+.wip-facts div{display:grid;grid-template-columns:7.5rem minmax(0,1fr);gap:.8rem;padding:.55rem 0;border-bottom:1px solid var(--line-soft)}
+.wip-facts dt{font-family:var(--f-ui);font-size:.74rem;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:var(--accent);padding-top:.15rem}
+.wip-facts dd{margin:0;font-size:.92rem}
+@media(max-width:420px){.wip-facts div{grid-template-columns:1fr;gap:.1rem}}
+#today .g-item{position:relative}
+.tile-cap .tile-status.live{background:none;padding:0;border-radius:0}
+.tile:not(.tile-feature) .tile-visual{aspect-ratio:16/10}
+/* Square corners everywhere, to match the project cards */
+.art-index a{border-radius:0;border-color:var(--line)}
+.skilltbl,.skilltbl table{border-radius:0}
+@media(max-width:640px){.skilltbl tr{border-radius:0;border-color:var(--line)}}
+@media(max-width:860px){.tile-grid{grid-template-columns:1fr}}
+#today{scroll-margin-top:124px}

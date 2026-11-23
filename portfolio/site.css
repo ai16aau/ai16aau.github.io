@@ -632,7 +632,7 @@ a.wcard:hover .wfoot .go svg{transform:translateX(4px)}
   .skilltbl td:first-child{font-family:var(--f-display);font-size:1.08rem;font-weight:650;color:var(--ink)}
   .skilltbl td:nth-child(2)::before,.skilltbl td:nth-child(3)::before{display:block;font-family:var(--f-ui);font-size:.72rem;font-weight:650;text-transform:uppercase;letter-spacing:.04em;color:var(--ink-2);margin:.25rem 0 .1rem}
   .skilltbl td:nth-child(2)::before{content:"Evidence"}
-  .skilltbl td:nth-child(3)::before{content:"Open section"}
+  .skilltbl td:nth-child(3)::before{content:"Where to see it"}
   .skilltbl td:nth-child(3) a{display:inline-flex;min-height:44px;align-items:center;font-weight:650}
   .tblwrap[data-scroll-table]::before{content:"Scroll horizontally to see every column";display:block;position:sticky;left:0;width:max-content;max-width:calc(100vw - 48px);font-family:var(--f-ui);font-size:.78rem;color:var(--ink-2);padding:.55rem .75rem;background:var(--surface-2);border-radius:var(--r-s);margin:0 0 .65rem}
 }

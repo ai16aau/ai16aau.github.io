@@ -35,7 +35,7 @@
   <div class="toc-scrim" data-toc-close></div>
   <aside class="toc-sheet" role="dialog" aria-modal="true" aria-labelledby="tocTitle">
     <header><b id="tocTitle">Contents</b><button class="toc-close" type="button" data-toc-close aria-label="Close contents"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button></header>
-    <nav aria-label="Case study sections"><p class="toc-group">Overview</p><ol><li><a href="#glance" data-toc>Case dashboard</a></li><li><a href="#strategy-system" data-toc>Strategy and system artefacts</a></li><li><a href="#personas" data-toc>The four personas</a></li><li><a href="#screens" data-toc>What changed in the product</a></li></ol><p class="toc-group">Evidence and decisions</p><ol><li><a href="#validation" data-toc>Three sources of evidence</a></li><li><a href="#beforeafter" data-toc>Before and after</a></li><li><a href="#rice" data-toc>How I prioritised</a></li><li><a href="#process" data-toc>How the release ran</a></li><li><a href="#catalogue" data-toc>Why Korean titles were hard to find</a></li></ol><p class="toc-group">Design</p><ol><li><a href="#wireframes" data-toc>Wireframes</a></li><li><a href="#storyboard" data-toc>Storyboard</a></li></ol><p class="toc-group">Detail</p><ol><li><a href="#product" data-toc>How it works</a></li><li><a href="#constraints" data-toc>Constraints</a></li><li><a href="#discarded" data-toc>A metric I discarded</a></li><li><a href="#shipped" data-toc>Requirements</a></li><li><a href="#scenarios" data-toc>Scenarios</a></li></ol><p class="toc-group">Launch and results</p><ol><li><a href="#gtm" data-toc>Go-to-market</a></li><li><a href="#notdone" data-toc>What I chose not to do</a></li><li><a href="#results" data-toc>Verified changes and next measures</a></li><li><a href="#caveats" data-toc>Caveats</a></li></ol></nav>
+    <nav aria-label="Case study sections"><p class="toc-group">Overview</p><ol><li><a href="#glance" data-toc>Overview</a></li><li><a href="#strategy-system" data-toc>Strategy, system and measurement</a></li><li><a href="#today" data-toc>The product today</a></li><li><a href="#personas" data-toc>The four personas</a></li><li><a href="#screens" data-toc>What changed at release</a></li></ol><p class="toc-group">Evidence and decisions</p><ol><li><a href="#validation" data-toc>Three sources of evidence</a></li><li><a href="#beforeafter" data-toc>Before and after</a></li><li><a href="#rice" data-toc>How I prioritised</a></li><li><a href="#process" data-toc>How the release ran</a></li><li><a href="#catalogue" data-toc>Why Korean titles were hard to find</a></li></ol><p class="toc-group">Design</p><ol><li><a href="#wireframes" data-toc>Wireframes</a></li><li><a href="#storyboard" data-toc>Storyboard</a></li></ol><p class="toc-group">Detail</p><ol><li><a href="#product" data-toc>How it works</a></li><li><a href="#constraints" data-toc>Constraints</a></li><li><a href="#discarded" data-toc>A metric I discarded</a></li><li><a href="#shipped" data-toc>Requirements</a></li><li><a href="#scenarios" data-toc>Scenarios</a></li></ol><p class="toc-group">Launch and results</p><ol><li><a href="#gtm" data-toc>Go-to-market</a></li><li><a href="#notdone" data-toc>What I chose not to do</a></li><li><a href="#results" data-toc>Verified changes and next measures</a></li><li><a href="#caveats" data-toc>Caveats</a></li></ol></nav>
   </aside>
 </div>
 <main id="main">
@@ -49,7 +49,7 @@
         <p class="lead-v2">A film and TV recommendation tool for people who want suggestions based on why they like something, not only whether they liked it. This case study covers the research, decisions and requirements behind its first release.</p>
         <div class="home-actions-v2"><a class="button-v2" href="#glance">Read the overview</a><a class="button-v2 secondary" href="https://whatcaniwatchnow.com" target="_blank" rel="noopener">Try the live product</a></div>
       </div>
-      <div class="case-poster-v2"><img src="img/wciwn-landing.jpg" alt="What Can I Watch Now landing page"><img src="img/wciwn-step1-optional.jpg" alt="Optional first step with progress and skip controls"><img src="img/wciwn-picker-korea.jpg" alt="Title picker filtered to Korean titles"></div>
+      <div class="case-poster-v2"><img src="img/wciwn-now-landing.jpg" alt="The What Can I Watch Now landing page on a phone"><img src="img/wciwn-now-profile.jpg" alt="The results page opening with the viewer profile"><img src="img/wciwn-now-recommendations.jpg" alt="A recommendation card explaining why the title fits"></div>
     </div>
     <div class="case-summary-strip-v2">
       <div><b>23/34</b><span>first visitors left without starting</span></div>
@@ -62,59 +62,59 @@
 
 <section class="case-dashboard-v2" id="glance">
   <div class="wrap">
-    <div class="case-dashboard-head-v2"><h2>Overview</h2><div><p>The research found usability problems inside the journey, while the funnel showed that the largest loss happened before the first interaction. The release addressed activation, content discovery, journey clarity and returning without an account.</p><p><strong>Measurement status:</strong> the product changes have been checked in the live build. Behavioural outcomes will be assessed in the next valid funnel read.</p></div></div>
+    <div class="case-dashboard-head-v2"><h2>Overview</h2><div><p>The user sessions found problems inside the journey. The funnel showed a bigger one before it: most first visitors left without starting. This release made the first step clearer, made international titles easier to find, and let people come back without starting again.</p><p><strong>Measurement status:</strong> every change has been checked in the live build. Whether they changed behaviour will show in the next funnel read.</p></div></div>
 
     <div class="mode-panel-v2" aria-label="Case study reading mode">
-      <p id="modeDescription">Highlights shows the decision trail. Full case reveals every supporting document and detailed section.</p>
+      <p id="modeDescription">Highlights shows the key decisions. Full case adds every supporting document and section.</p>
       <div class="mode-switch-v2"><button class="mode-btn" id="modeHighlights" type="button" aria-pressed="true">Highlights</button><button class="mode-btn" id="modeFull" type="button" aria-pressed="false">Full case</button></div>
     </div>
-    <p class="mode-note-v2" id="modeNote">You are viewing the highlights. Direct links to a detailed artefact reveal the full case automatically.</p>
+    <p class="mode-note-v2" id="modeNote">You're viewing the highlights. Any link to a detailed section opens the full case.</p>
 
     <nav class="evidence-map-v2" aria-label="Evidence trail">
-      <a href="#validation"><b>01 · Discover</b><span>Triangulate the problem</span><small>Sessions, funnel and product inspection</small></a>
-      <a href="#strategy-system"><b>02 · Frame</b><span>Map the opportunity</span><small>User problem to solution and signal</small></a>
-      <a href="#rice"><b>03 · Decide</b><span>Prioritise with judgement</span><small>RICE, constraints and overrides</small></a>
-      <a href="#shipped"><b>04 · Define</b><span>Write scoped requirements</span><small>In scope, out of scope and measures</small></a>
-      <a href="#screens"><b>05 · Ship</b><span>Release seven changes</span><small>Five review rounds and live checks</small></a>
-      <a href="#results"><b>06 · Measure</b><span>Separate proof from outcome</span><small>Verified now, behavioural read next</small></a>
+      <a href="#validation"><b>01 · Discover</b><span>Check the problem three ways</span><small>User sessions, the funnel and the product itself</small></a>
+      <a href="#strategy-system"><b>02 · Frame</b><span>Map the opportunity</span><small>From each problem to a change and a signal</small></a>
+      <a href="#rice"><b>03 · Decide</b><span>Prioritise the work</span><small>RICE scores, and where I overruled them</small></a>
+      <a href="#shipped"><b>04 · Define</b><span>Write the requirements</span><small>In scope, out of scope and how to measure</small></a>
+      <a href="#screens"><b>05 · Ship</b><span>Release seven changes</span><small>Five review rounds, then checks on the live site</small></a>
+      <a href="#results"><b>06 · Measure</b><span>Keep checks and results apart</span><small>Checked now, measured next</small></a>
     </nav>
 
     <div class="brief-grid-v2">
-      <article class="brief-card-v2"><p class="label-v2">Problem</p><h3>Most visitors never began.</h3><p>23 of 34 first visitors left from the landing page. Moderated sessions could not reveal that because participants had already agreed to use the product.</p></article>
-      <article class="brief-card-v2"><p class="label-v2">Root cause</p><h3>The user diagnosis was not the defect.</h3><p>People said the optional step was easy to miss. The product check found that the skip control had never rendered at all.</p></article>
-      <article class="brief-card-v2"><p class="label-v2">Decision</p><h3>Seven changes shipped together.</h3><p>Nine options were prioritised. Two were held back, including a requested feature that would not change a recommendation.</p></article>
-      <article class="brief-card-v2"><p class="label-v2">Measurement</p><h3>The outcome is still unknown.</h3><p>The build is verified. Outcome claims wait until roughly 150 first visits give the next funnel read a more useful base.</p></article>
+      <article class="brief-card-v2"><p class="label-v2">Problem</p><h3>Most visitors never started.</h3><p>23 of 34 first visitors left from the landing page. The user sessions couldn't show this, because both participants had already agreed to try the product.</p></article>
+      <article class="brief-card-v2"><p class="label-v2">Root cause</p><h3>The users' explanation wasn't the cause.</h3><p>Both users said they hadn't noticed the step was optional. A check of the product found the skip control had never appeared at all.</p></article>
+      <article class="brief-card-v2"><p class="label-v2">Decision</p><h3>Seven changes shipped together.</h3><p>Nine changes were scored. Two were held back, including a requested feature that wouldn't have changed a single recommendation.</p></article>
+      <article class="brief-card-v2"><p class="label-v2">Measurement</p><h3>The outcome isn't known yet.</h3><p>The build is checked. Claims about results wait for about 150 first visits, so the next funnel read has a base worth reading.</p></article>
     </div>
   </div>
 </section>
 
 <section class="artifact-lab-v2" id="strategy-system">
   <div class="wrap">
-    <div class="section-heading-v2"><div><p class="eyebrow-v2">Product definition</p><h2>Strategy, system and measurement</h2></div><p>The opportunity map connects the research to the product changes. The architecture shows how the browser-only product works, and the KPI tree shows how the next release will be assessed.</p></div>
+    <div class="section-heading-v2"><div><p class="eyebrow-v2">Product definition</p><h2>Strategy, system and measurement</h2></div><p>The opportunity map links each research finding to what changed. The architecture shows how the product works without a server, and the KPI tree shows how the next read will judge the release.</p></div>
     <div class="strategy-grid-v2">
       <article class="diagram-v2 wide">
-        <h3>Opportunity-to-solution map</h3><p>Observed problem, product opportunity, shipped response and the signal used to decide what happens next.</p>
+        <h3>Opportunity-to-solution map</h3><p>Each row runs from the problem I saw to what shipped, and the signal that decides what happens next.</p>
         <div class="tree-v2">
-          <div class="tree-node-v2"><strong>Problem</strong><span>23 of 34 first visitors never started</span></div><div class="tree-node-v2"><strong>Opportunity</strong><span>Make the first action and journey commitment obvious</span></div><div class="tree-node-v2 solution"><strong>Shipped response</strong><span>Clarified the optional step and added progress cues</span></div><div class="tree-node-v2 signal"><strong>Signal</strong><span>Start rate and completion in the next funnel read</span></div>
+          <div class="tree-node-v2"><strong>Problem</strong><span>23 of 34 first visitors never started</span></div><div class="tree-node-v2"><strong>Opportunity</strong><span>Make the first step and the length of the journey obvious</span></div><div class="tree-node-v2 solution"><strong>Shipped response</strong><span>Clarified the optional step and added progress cues</span></div><div class="tree-node-v2 signal"><strong>Signal</strong><span>Start rate and completion in the next funnel read</span></div>
           <div class="tree-node-v2"><strong>Problem</strong><span>Korean titles existed but ranking and filters buried them</span></div><div class="tree-node-v2"><strong>Opportunity</strong><span>Let regional intent shape discovery earlier</span></div><div class="tree-node-v2 solution"><strong>Shipped response</strong><span>Made in filter plus regional ranking changes</span></div><div class="tree-node-v2 signal"><strong>Signal</strong><span>1 to 6 non-US/UK titles in the first 24, verified</span></div>
           <div class="tree-node-v2"><strong>Problem</strong><span>Returning meant repeating the entire journey</span></div><div class="tree-node-v2"><strong>Opportunity</strong><span>Support return without an account or stored profile</span></div><div class="tree-node-v2 solution"><strong>Shipped response</strong><span>Portable code holding the preferences themselves</span></div><div class="tree-node-v2 signal"><strong>Signal</strong><span>Code copied, used and answers edited after restore</span></div>
         </div>
       </article>
 
       <article class="diagram-v2">
-        <h3>System architecture</h3><p>The technical boundary explains both the product strengths and its constraints.</p>
+        <h3>System architecture</h3><p>Where the product's strengths and limits come from.</p>
         <div class="arch-v2"><div class="arch-node-v2"><b>Input</b><span>Visitor choices in the browser</span></div><div class="arch-node-v2"><b>Model</b><span>Three-stage scoring and balance rules</span></div><div class="arch-node-v2"><b>Data</b><span>479 manually classified titles plus TMDB metadata</span></div><div class="arch-node-v2"><b>Output</b><span>Ranked recommendation list and keep actions</span></div><div class="arch-node-v2"><b>Signals</b><span>Cookieless journey and interaction events</span></div></div>
         <p class="mode-note-v2">No server. No account. No personal profile stored.</p>
       </article>
 
       <article class="diagram-v2">
-        <h3>KPI tree</h3><p>The measurement chain starts with activation and ends with a useful list. Only the build-level measures are verified so far.</p>
+        <h3>KPI tree</h3><p>It starts with people starting the journey and ends with a list they can use. Only the build-level measures are checked so far.</p>
         <div class="kpi-v2"><div><b>Primary outcome</b><span>Completed recommendation list</span><small>Next funnel read</small></div><div><b>Activation</b><span>Started from first visit</span><small>Baseline: 11 of 34 reached the picker</small></div><div><b>Progress</b><span>Step reach, completion and skips</span><small>Instrumented</small></div><div><b>Return</b><span>Code copied and restored</span><small>Instrumented</small></div></div>
       </article>
 
       <article class="diagram-v2 wide">
-        <h3>Now, next and later</h3><p>The sequence is based on the evidence available at each stage.</p>
-        <div class="roadmap-v2"><div><b>Now · shipped</b><p>Seven prioritised changes, new journey events and verified live-build behaviour.</p></div><div><b>Next · after enough traffic</b><p>Read the funnel at roughly 150 first visits and test whether activation and completion moved.</p></div><div><b>Later · evidence dependent</b><p>Select one next experiment, isolate the decision where possible and preserve the baseline and caveats.</p></div></div>
+        <h3>Now, next and later</h3><p>Each stage waits for the evidence the one before it produces.</p>
+        <div class="roadmap-v2"><div><b>Now · shipped</b><p>Seven changes, new journey events, and every change checked on the live site.</p></div><div><b>Next · after enough traffic</b><p>Read the funnel at about 150 first visits and see whether starting and finishing moved.</p></div><div><b>Later · depends on the evidence</b><p>Pick one next experiment, change one thing at a time where possible, and keep the baseline and caveats.</p></div></div>
       </article>
     </div>
   </div>
@@ -185,6 +185,65 @@
     </ul>
 
   </div>
+</section>
+
+<section class="gallery-band" id="today" aria-labelledby="today-title">
+  <div class="wrap gallery-head">
+    <div>
+      <h2 id="today-title">The product today</h2>
+      <p>The live product has kept changing since the release this case study covers. These are its screens now, on a phone.</p>
+    </div>
+    <div class="gallery-controls">
+      <button class="g-btn" type="button" data-gallery-prev aria-label="Previous screen"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 6l-6 6 6 6"/></svg></button>
+      <span class="count" data-gallery-count aria-live="polite">1 / 7</span>
+      <button class="g-btn" type="button" data-gallery-next aria-label="Next screen"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></button>
+    </div>
+  </div>
+  <div class="gallery" data-gallery tabindex="0" role="region" aria-label="Screens from the live product. Use the arrow keys to move through them.">
+      <a class="g-item" href="https://whatcaniwatchnow.com" target="_blank" rel="noopener">
+        <figure style="margin:0">
+          <div class="g-phone"><img src="img/wciwn-now-landing.jpg" alt="The landing page on a phone: the product name, one line on what it does, a Get started now button and a box to paste a code from last time." loading="eager" width="390" height="844" draggable="false"></div>
+          <figcaption><b>The landing page</b>One line on what it's for, one button, and a place for returning visitors to paste their code.</figcaption>
+        </figure><span class="visually-hidden"> (opens the live product in a new tab)</span>
+      </a>
+      <a class="g-item" href="https://whatcaniwatchnow.com" target="_blank" rel="noopener">
+        <figure style="margin:0">
+          <div class="g-phone"><img src="img/wciwn-now-what-matters.jpg" alt="Step 1 of 4 on a phone, What matters to you, with Writing and Performances selected from a list of categories, each with a short explanation." loading="eager" width="390" height="844" draggable="false"></div>
+          <figcaption><b>Step 1: what matters to you</b>Eleven things that make a film or series work, each explained in plain words. Since this release, the step no longer says it's optional, because answering it gives the recommendations more to work with.</figcaption>
+        </figure><span class="visually-hidden"> (opens the live product in a new tab)</span>
+      </a>
+      <a class="g-item" href="https://whatcaniwatchnow.com" target="_blank" rel="noopener">
+        <figure style="margin:0">
+          <div class="g-phone"><img src="img/wciwn-now-titles.jpg" alt="Step 2 of 4 on a phone: title cards for Schitt's Creek and Fleabag, both marked as selected." loading="eager" width="390" height="844" draggable="false"></div>
+          <figcaption><b>Step 2: titles you've enjoyed</b>Search, a films or series switch and genre filters, with every pick clearly marked.</figcaption>
+        </figure><span class="visually-hidden"> (opens the live product in a new tab)</span>
+      </a>
+      <a class="g-item" href="https://whatcaniwatchnow.com" target="_blank" rel="noopener">
+        <figure style="margin:0">
+          <div class="g-phone"><img src="img/wciwn-now-mood.jpg" alt="Step 3 of 4 on a phone: mood options, with Keep me hooked and Make me feel something selected." loading="lazy" width="390" height="844" draggable="false"></div>
+          <figcaption><b>Step 3: your mood</b>Nine moods, plus optional choices for when it was made and how you want to watch it.</figcaption>
+        </figure><span class="visually-hidden"> (opens the live product in a new tab)</span>
+      </a>
+      <a class="g-item" href="https://whatcaniwatchnow.com" target="_blank" rel="noopener">
+        <figure style="margin:0">
+          <div class="g-phone"><img src="img/wciwn-now-profile.jpg" alt="Step 4 of 4 on a phone: the results open with a viewer profile reading You are a mood-led viewer, and what the viewer rates highest." loading="lazy" width="390" height="844" draggable="false"></div>
+          <figcaption><b>Step 4: your viewer profile</b>The list opens with what your choices say about your taste.</figcaption>
+        </figure><span class="visually-hidden"> (opens the live product in a new tab)</span>
+      </a>
+      <a class="g-item" href="https://whatcaniwatchnow.com" target="_blank" rel="noopener">
+        <figure style="margin:0">
+          <div class="g-phone"><img src="img/wciwn-now-recommendations.jpg" alt="A recommendation card on a phone, with a Strong match label, a Why this fits explanation and where the title is available." loading="lazy" width="390" height="844" draggable="false"></div>
+          <figcaption><b>Step 4: your recommendations</b>Each one says why it fits, using the titles you picked, and where you can watch it.</figcaption>
+        </figure><span class="visually-hidden"> (opens the live product in a new tab)</span>
+      </a>
+      <a class="g-item" href="https://whatcaniwatchnow.com" target="_blank" rel="noopener">
+        <figure style="margin:0">
+          <div class="g-phone"><img src="img/wciwn-now-code.jpg" alt="The end of the results page on a phone: a code to keep, with a Copy my code button, and buttons to email or copy the list." loading="lazy" width="390" height="844" draggable="false"></div>
+          <figcaption><b>Step 4: a code to come back with</b>Copy the code, paste it next time, and go straight to your mood. Nothing is stored on a server.</figcaption>
+        </figure><span class="visually-hidden"> (opens the live product in a new tab)</span>
+      </a>
+  </div>
+  <div class="wrap"><p class="today-note">Captured from whatcaniwatchnow.com at 390 pixels wide.</p></div>
 </section>
 
 <section class="sec doc" id="personas">
@@ -283,8 +342,8 @@
 
 <section class="sec" id="screens">
   <div class="wrap">
-    <h2>What changed in the product</h2>
-    <p class="measure">These are screenshots of the live product on a phone, since that's where 63% of visits come from. Under each one is the problem it was meant to fix and what I changed.</p>
+    <h2>What changed at release</h2>
+    <p class="measure">These screenshots show the product at this release, on a phone, where 63% of visits come from. Under each one is the problem it was meant to fix and what I changed.</p>
     <div class="shots">
       <figure class="shot">
         <div class="shot-img"><img src="img/wciwn-landing.jpg" alt="The live landing page on a phone: the product name, one line on what it does, a Get started now button, and a box to paste a code from last time." loading="lazy" width="390" height="844"></div>
@@ -350,7 +409,7 @@
         </figcaption>
       </figure>
     </div>
-    <p class="smallnote" style="margin-top:1rem">Captured from whatcaniwatchnow.com at 390 pixels wide.</p>
+    <p class="smallnote" style="margin-top:1rem">Captured from whatcaniwatchnow.com at 390 pixels wide, at the time of this release. For the screens as they are now, see <a href="#today">The product today</a>.</p>
   </div>
 </section>
 
@@ -1391,7 +1450,7 @@
   var cur=document.getElementById('curSection'), bar=document.getElementById('readProgress');
   function spy(){
     var y=window.scrollY+140, active=null;
-    map.forEach(function(m){ if(m.el.getBoundingClientRect().top+window.scrollY<=y) active=m; });
+    map.forEach(function(m){ if(m.el.closest('[hidden]')) return; if(m.el.getBoundingClientRect().top+window.scrollY<=y) active=m; });
     tocLinks.forEach(function(a){a.classList.remove('on')});
     if(active){active.a.classList.add('on'); cur.textContent=active.a.textContent;} else {cur.textContent='Overview';}
     var h=document.documentElement.scrollHeight-window.innerHeight;
@@ -1425,7 +1484,7 @@
     detailSections.forEach(function(section){section.hidden=!full;});
     if(highlightsButton) highlightsButton.setAttribute('aria-pressed',String(!full));
     if(fullButton) fullButton.setAttribute('aria-pressed',String(full));
-    if(modeNote) modeNote.textContent=full?'You are viewing every supporting section and working document.':'You are viewing the highlights. Direct links to a detailed artefact reveal the full case automatically.';
+    if(modeNote) modeNote.textContent=full?'You\'re viewing the full case, with every section and working document.':'You\'re viewing the highlights. Any link to a detailed section opens the full case.';
     document.body.setAttribute('data-reading-mode',full?'full':'highlights');
     spy();
   }
